@@ -1,4 +1,4 @@
-# 02-challenge-Portfolio
+# Password Generator
 
 ## Description
 
@@ -7,8 +7,10 @@ This a password generator. When you click the button it will give you a set of o
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality: 
-![This shows what home page will look like](./assets/)
+![This shows what home page will look like](./assets/passwordgenprev.png)
 
 ## Deployment Link
+
+https://flunder620.github.io/Password-Generator/
 
 
