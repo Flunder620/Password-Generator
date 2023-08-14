@@ -23,10 +23,6 @@ function generatePassword(){
   var passwordOption = []
   var finalPassword = []
   //prompts user for options
-  // var passLength = 0
-  // while ((passLength > 8 && passlength < 128)){
-  // var passLength = prompt("How many characters would you like? Minimum of 8 to maximum of 128")
-  // }
   var passLength = prompt("How many characters would you like? Minimum of 8 to maximum of 128")
   // if (passLength < 8 && passLength > 128){
   //   alert("Password must have 8-128 characters")
