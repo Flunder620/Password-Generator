@@ -10,6 +10,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
+//variables declared for options
 var lowercaseCharacters = 'abcdefghijklmnopqrstuvwxyz'.split('')
 var uppercaseCharacters = 'abcdefghijklmnopqrstuvwxyz'.toLocaleUpperCase().split('')
 var numberCharacters = '0123456789'.split('')
@@ -18,22 +19,28 @@ var symbolCharacters = '!@#$%^&*()'.split('')
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
+  //emtpy arrays chosen options and the final password
   var passwordOption = []
   var finalPassword = []
+  //prompts user for options
   var passLength = prompt("How many characters would you like?")
   var hasLowercase = confirm("Would you like lowercase letters?")
   var hasUppercase = confirm("Would you like uppercase letters?")
   var numbers = confirm("Would you like numbers?")
   var symbols = confirm("Would you like symbols?")
+  //adds lowercase characters if true
   if (hasLowercase === true){
     passwordOption = passwordOption.concat(lowercaseCharacters)
   }
+  //adds uppercase characters if true
   if (hasUppercase === true){
     passwordOption = passwordOption.concat(uppercaseCharacters)
   }
+  //adds numbers if true
   if (numbers === true){
     passwordOption = passwordOption.concat(numberCharacters)
   }
+  //adds symbols if true
   if (symbols === true){
     passwordOption = passwordOption.concat(symbolCharacters)
   }
